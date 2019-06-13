@@ -1,4 +1,4 @@
-{% set version = '0.3.2' %}
+{% set version = "0.3.3.1" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,7 +10,7 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/ggspectra_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/ggspectra/ggspectra_{{ version }}.tar.gz
-  sha256: 56849d17632350383f8fa413cbdd80369f776397a613584fdaf3dd5ae2eafddf
+  sha256: 6775d36b1e5b4e1218313c7b36ab898c09e41be16aeaf40b3c67fce42b519757
 
 build:
   merge_build_host: True  # [win]
