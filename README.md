@@ -3,7 +3,7 @@ About r-ggspectra
 
 Home: https://www.r4photobiology.info, https://bitbucket.org/aphalo/ggspectra
 
-Package license: GPL (>= 2)
+Package license: GPL-2
 
 Feedstock license: BSD 3-Clause
 
