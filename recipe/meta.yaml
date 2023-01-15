@@ -15,7 +15,7 @@ source:
 build:
   merge_build_host: true  # [win]
   number: 0
-  skip: true  # [r_base == '3.5.1']
+  noarch: generic
   rpaths:
     - lib/R/lib/
     - lib/
@@ -23,26 +23,27 @@ build:
 requirements:
   build:
     - {{ posix }}zip               # [win]
+    - cross-r-base {{ r_base }}    # [build_platform != target_platform]
   host:
     - r-base
-    - r-dplyr >=0.8.1
-    - r-ggplot2 >=3.1.1
-    - r-ggrepel >=0.8.1
-    - r-lubridate >=1.7.4
-    - r-photobiology >=0.9.29
-    - r-photobiologywavebands >=0.4.3
-    - r-scales >=1.0.0
-    - r-tidyr >=0.8.3
+    - r-ggplot2 >=3.4.0
+    - r-ggrepel >=0.9.1
+    - r-lubridate >=1.8.0
+    - r-photobiology >=0.10.15
+    - r-photobiologywavebands >=0.5.1
+    - r-rlang >=1.0.2
+    - r-scales >=1.2.0
+    - r-tibble >=3.1.5
   run:
     - r-base
-    - r-dplyr >=0.8.1
-    - r-ggplot2 >=3.1.1
-    - r-ggrepel >=0.8.1
-    - r-lubridate >=1.7.4
-    - r-photobiology >=0.9.29
-    - r-photobiologywavebands >=0.4.3
-    - r-scales >=1.0.0
-    - r-tidyr >=0.8.3
+    - r-ggplot2 >=3.4.0
+    - r-ggrepel >=0.9.1
+    - r-lubridate >=1.8.0
+    - r-photobiology >=0.10.15
+    - r-photobiologywavebands >=0.5.1
+    - r-rlang >=1.0.2
+    - r-scales >=1.2.0
+    - r-tibble >=3.1.5
 
 test:
   commands:
@@ -51,7 +52,7 @@ test:
 
 about:
   home: https://www.r4photobiology.info, https://bitbucket.org/aphalo/ggspectra
-  license: GPL-2
+  license: GPL-2.0-or-later
   summary: Additional annotations, stats, geoms and scales for plotting  "light" spectra with 'ggplot2', together with specializations of ggplot() and autoplot() methods for spectral data and waveband definitions stored in objects of classes defined in package 'photobiology'. Part of the  'r4photobiology' suite, Aphalo P.
     J. (2015) <doi:10.19232/uv4pb.2015.1.14>.
   license_family: GPL2
