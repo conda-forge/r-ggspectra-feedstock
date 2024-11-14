@@ -1,4 +1,4 @@
-{% set version = "0.3.13" %}
+{% set version = "0.3.14" %}
 {% set posix = 'm2-' if win else '' %}
 
 package:
@@ -9,7 +9,7 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/ggspectra_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/ggspectra/ggspectra_{{ version }}.tar.gz
-  sha256: c75a6e9146e15ca7b3c76e7f967118a91c4140de5104669d1c091c0045f57b22
+  sha256: 3590710a61742bd2e8e262aa8fe4fc73f4ebc569c79b4ba6f43071a39401be7b
 
 build:
   number: 0
