@@ -24,21 +24,21 @@ requirements:
     - cross-r-base {{ r_base }}    # [build_platform != target_platform]
   host:
     - r-base
-    - r-ggplot2 >=3.4.0
-    - r-ggrepel >=0.9.1
-    - r-lubridate >=1.8.0
-    - r-photobiology >=0.10.15
-    - r-photobiologywavebands >=0.5.1
+    - r-ggplot2 >=3.5.0
+    - r-ggrepel >=0.9.2
+    - r-lubridate >=1.9.0
+    - r-photobiology >=0.13.1
+    - r-photobiologywavebands >=0.5.2
     - r-rlang >=1.0.2
     - r-scales >=1.2.0
     - r-tibble >=3.1.5
   run:
     - r-base
-    - r-ggplot2 >=3.4.0
-    - r-ggrepel >=0.9.1
-    - r-lubridate >=1.8.0
-    - r-photobiology >=0.10.15
-    - r-photobiologywavebands >=0.5.1
+    - r-ggplot2 >=3.5.0
+    - r-ggrepel >=0.9.2
+    - r-lubridate >=1.9.0
+    - r-photobiology >=0.13.1
+    - r-photobiologywavebands >=0.5.2
     - r-rlang >=1.0.2
     - r-scales >=1.2.0
     - r-tibble >=3.1.5
