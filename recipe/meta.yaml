@@ -1,4 +1,4 @@
-{% set version = "0.3.17" %}
+{% set version = "0.4.0" %}
 {% set posix = 'm2-' if win else '' %}
 
 package:
@@ -9,7 +9,7 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/ggspectra_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/ggspectra/ggspectra_{{ version }}.tar.gz
-  sha256: f24faa9fe4b59ecd39533f9e28e43b08f3f7ff00273fb61d2b7e58d6a27b7d17
+  sha256: 5f9df2c218aeb7573a206f4b6a5b71a79fafe0731beec85f1c2183272d355e43
 
 build:
   number: 0
@@ -51,8 +51,8 @@ test:
 about:
   home: https://www.r4photobiology.info, https://bitbucket.org/aphalo/ggspectra
   license: GPL-2.0-or-later
-  summary: Additional annotations, stats, geoms and scales for plotting  "light" spectra with 'ggplot2', together with specializations of ggplot() and autoplot() methods for spectral data and waveband definitions stored in objects of classes defined in package 'photobiology'. Part of the  'r4photobiology' suite, Aphalo P.
-    J. (2015) <doi:10.19232/uv4pb.2015.1.14>.
+  summary: Additional annotations, stats, geoms and scales for plotting  "light" spectra with 'ggplot2', together with specializations of ggplot() and autoplot() methods for spectral data and waveband definitions stored in objects of classes defined in package 'photobiology'. Part of the  'r4photobiology' suite, Aphalo
+    P. J. (2015) <doi:10.19232/uv4pb.2015.1.14>.
   license_family: GPL2
   license_file:
     - {{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-2
