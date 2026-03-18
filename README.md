@@ -3,11 +3,13 @@ About r-ggspectra-feedstock
 
 Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-ggspectra-feedstock/blob/main/LICENSE.txt)
 
-Home: https://www.r4photobiology.info, https://bitbucket.org/aphalo/ggspectra
+Home: https://www.r4photobiology.info
 
 Package license: GPL-2.0-or-later
 
 Summary: Additional annotations, stats, geoms and scales for plotting  "light" spectra with 'ggplot2', together with specializations of ggplot() and autoplot() methods for spectral data and waveband definitions stored in objects of classes defined in package 'photobiology'. Part of the  'r4photobiology' suite, Aphalo P. J. (2015) <doi:10.19232/uv4pb.2015.1.14>.
+
+Development: https://bitbucket.org/aphalo/ggspectra
 
 Current build status
 ====================
